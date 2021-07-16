@@ -14,13 +14,15 @@ const StyledCol = styled.div`
 `;
 
 const StyledH1 = styled.h1`
-  width: 50%;
+  width: 30%;
   margin: 1% auto;
   padding: 0.5% 0;
   border-radius: 0.05in;
   box-shadow: 2px 2px 3px 0px #000000;
   background-color: #F7F4F4;
   color: #7E4D93;
+  font-size: 1.8rem;
+  font-weight: normal;
 `;
 
 const App = () => {

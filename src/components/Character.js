@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
 `;
 
 const LeftCharDiv = styled.div`
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding: 1%;
 `;
 
