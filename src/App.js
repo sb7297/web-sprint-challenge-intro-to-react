@@ -7,20 +7,20 @@ import Character from './components/Character';
 const StyledCol = styled.div`
   width: 50%;
   margin: 1% auto;
-  border: 1px solid SlateGray;
+  padding: 1% 0;
   border-radius: 0.05in;
-  background-color: LavenderBlush;
-  box-shadow: 4px 3px 5px 0px #EFE6EB;
+  background-color: #7E4D93;
+  box-shadow: 2px 2px 35px 0px #B5B0AA;
 `;
 
 const StyledH1 = styled.h1`
   width: 50%;
   margin: 1% auto;
-  border: 1px solid SlateGray;
+  padding: 0.5% 0;
   border-radius: 0.05in;
-  background-color: #7567C2;
-  color: #F2F0E5;
-  box-shadow: 2px 2px 5px 0px #B5B0AA;
+  box-shadow: 2px 2px 3px 0px #000000;
+  background-color: #F7F4F4;
+  color: #7E4D93;
 `;
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div className="App">
       <StyledCol>
-        <StyledH1 className="Header">Characters</StyledH1>
+        <StyledH1>Characters</StyledH1>
         {characters.map(char => <Character char={char} />)}
       </StyledCol>
     </div>
