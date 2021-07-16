@@ -1,7 +1,13 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 import './App.css';
 import Character from './components/Character';
+
+const StyledCol = styled.div`
+  width: 40%;
+  margin: auto;
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -23,8 +29,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      {characters.map(char => <Character char={char} />)}
+      <StyledCol>
+        <h1 className="Header">Characters</h1>
+        {characters.map(char => <Character char={char} />)}
+      </StyledCol>
     </div>
   );
 }
