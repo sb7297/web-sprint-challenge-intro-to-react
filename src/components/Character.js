@@ -1,14 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+    width: 70%;
+    margin: 2% auto;
+    border: 1px solid SlateGray;
+    border-radius: 0.05in;
+`;
 
 const Character = ({ char }) => {
     return (
-    <div class="character">
-        <ul>
-            <li>{char.name}</li>
-            <li>{char.gender}</li>
-            <li>{char.birth_year}</li>
-        </ul>
-    </div>
+    <StyledDiv>
+        <div>{char.name}</div>
+        <div>{char.gender}</div>
+        <div>{char.birth_year}</div>
+    </StyledDiv>
     );
 }
 
