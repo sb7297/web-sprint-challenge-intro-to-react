@@ -5,8 +5,22 @@ import './App.css';
 import Character from './components/Character';
 
 const StyledCol = styled.div`
-  width: 40%;
-  margin: auto;
+  width: 50%;
+  margin: 1% auto;
+  border: 1px solid SlateGray;
+  border-radius: 0.05in;
+  background-color: LavenderBlush;
+  box-shadow: 4px 3px 5px 0px #EFE6EB;
+`;
+
+const StyledH1 = styled.h1`
+  width: 50%;
+  margin: 1% auto;
+  border: 1px solid SlateGray;
+  border-radius: 0.05in;
+  background-color: #7567C2;
+  color: #F2F0E5;
+  box-shadow: 2px 2px 5px 0px #B5B0AA;
 `;
 
 const App = () => {
@@ -30,7 +44,7 @@ const App = () => {
   return (
     <div className="App">
       <StyledCol>
-        <h1 className="Header">Characters</h1>
+        <StyledH1 className="Header">Characters</StyledH1>
         {characters.map(char => <Character char={char} />)}
       </StyledCol>
     </div>
