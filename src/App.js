@@ -35,7 +35,6 @@ const App = () => {
   useEffect(() => {
     axios.get("https://swapi.dev/api/people")
     .then(res => {
-      console.log(res);
       setCharacters(res.data);
     })
     .catch(err => console.log("failed to get character data!"));
